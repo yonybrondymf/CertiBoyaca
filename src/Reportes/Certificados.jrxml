@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="efa7880a-b776-407f-a20c-713bb55ab721">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="201"/>
+	<parameter name="texto" class="java.lang.String"/>
+	<parameter name="texto2" class="java.lang.String"/>
+	<parameter name="texto3" class="java.lang.String"/>
+	<parameter name="titulo" class="java.lang.String"/>
+	<parameter name="secretaria" class="java.lang.String"/>
+	<parameter name="elaboro" class="java.lang.String"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="footer" class="java.io.InputStream"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="94" y="20" width="397" height="44" uuid="8ba19a02-1628-451f-a433-c94e29e72a18"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MUNICIPIO DE PUERTO BOYACÁ - BOYACÁ
+NIT: 891.800.466-4
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="11" y="7" width="94" height="64" uuid="283621b9-087c-46e1-86f2-a33a244fa70f"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="492" splitType="Stretch">
+			<staticText>
+				<reportElement x="116" y="68" width="353" height="64" uuid="0b2db563-e77f-450e-b8a5-456809802bf6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<text><![CDATA[LA SECRETARIA DE GOBIERNO DEL MUNICIPIO DE
+ PUERTO BOYACÁ (BOYACÁ).
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="132" width="100" height="20" uuid="3a93e7a9-2e0c-4b87-ab40-6ab2da9f729f"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<text><![CDATA[CERTIFICA:  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="429" width="304" height="42" uuid="6bf16792-ad34-48e1-afd0-0e304e91c639"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<text><![CDATA[Secretaria de Gobierno Municipal
+gobierno@puertoboyaca-boyaca.gov.co
+
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="29" y="160" width="502" height="65" uuid="2dfcc805-58c6-4920-8b4a-1e79cf6128e7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{texto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="31" y="244" width="500" height="54" uuid="569e5c81-8b5a-4a11-ace6-9ec6bc287036"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{texto2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="31" y="313" width="500" height="46" uuid="9d121545-d517-4ccd-9b72-89cad4c4f46d"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{texto3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="31" width="207" height="20" uuid="902caeea-c6b2-4adb-a651-c417a5a9c994"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="409" width="304" height="20" uuid="d644e737-d16f-4836-a85b-bd878c3c2e86"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{secretaria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="131" height="20" uuid="b3bfc80a-39cd-4597-998c-87c9ae0fbe27"/>
+				<textElement>
+					<font fontName="Arial" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[
+              Auxiliar Administrativo
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="48" width="276" height="20" uuid="010c6ef6-574d-45da-9bc2-a96a7dd6e76c"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Carrera 2 con Calle 10 Esquina teléfono: (098) 738 33 00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="68" width="457" height="20" uuid="80298d51-b9e6-44e8-80ce-659aa9f6f345"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[E-MAIL: alcaldía@puertoboyaca-boyaca.gov.co – contactenos@puertoboyaca-boyaca.gov.co]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="88" width="176" height="20" uuid="58947f34-3e87-4b03-b5a0-d0524a9b80b7"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[www.puertoboyaca-boyaca.gov.co]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="0" width="185" height="20" uuid="08c0ef28-1bf8-47b7-9579-d669a0100c21"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{elaboro}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="116" y="18" width="319" height="30" uuid="acf76c99-bbc1-47b8-b4a7-85ba94a6b1b2"/>
+				<imageExpression><![CDATA[$P{footer}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
