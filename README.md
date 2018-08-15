@@ -16,6 +16,7 @@ MODULOS
 6. Consultar Usuario
 7. Generar Backup
 8. Cargar Base de Datos
+9. Aprobar Certificados
 
 **************************
 NOTA
