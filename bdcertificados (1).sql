@@ -1325,7 +1325,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombres`, `apellidos`, `identificacion`, `direccion`, `telefono`, `usuario`, `password`, `perfil_id`, `fecha_registro`) VALUES
 (1, 'yony brondy ', 'mamani fuentes', '46464541', 'Miramar 431', '454541', 'yonilo', '1234', 3, '2018-05-02'),
 (2, 'julio jose', 'quiñonez ', '45121214', 'Calle Cuzco 201', '545412', 'juliojose', '1234', 2, '2018-05-02'),
-(3, 'juan carlos', 'chambilla ', '41414343', 'Calle Callao 430', '535312', 'juanca', '1234', 1, '2018-05-02'),
+(3, 'juan carlos', 'chambilla ', '41414343', 'Calle Callao 430', '535312', 'admin', 'admin', 1, '2018-05-02'),
 (4, 'gean carlos', 'manrique ', '45464546', 'calle arequipa 430', '545445', 'gean', '123456', 3, '2018-05-07');
 
 --
